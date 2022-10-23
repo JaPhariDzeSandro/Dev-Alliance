@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Register Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Side -->
+      <div class="left">
+        <div class="registration">
+          <div class="title">
+            <p>Create List</p>
+          </div>
+          <form id="submit-form">
+            <!-- FIRST NAME -->
+            <div class="input-group">
+              <label for="name">First Name</label>
+              <input
+                type="text"
+                id="name"
+                name="firstname"
+                onkeydown="return /[a-z]/i.test(event.key)"
+              />
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>Error Message</p>
+            </div>
+            <!-- LAST NAME -->
+            <div class="input-group">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                onkeydown="return /[a-z]/i.test(event.key)"
+              />
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>Error Message</p>
+            </div>
+            <!-- ADDRESS -->
+            <div class="input-group">
+              <label for="adrs">Address</label>
+              <input type="text" id="adrs" name="address" />
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>Error Message</p>
+            </div>
+            <!-- DATE OF BIRTH -->
+            <div class="input-group">
+              <label for="date">Date of Birth</label>
+              <input
+                style="height: 34px"
+                type="date"
+                id="date"
+                name="dateofbirth"
+                class="dateofbirth"
+              />
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>Error Message</p>
+            </div>
+            <!-- DROPDOWN -->
+            <div class="input-group">
+              <label for="dropdown">Gender</label>
+              <select name="dropdown" id="dropdown">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>Error Message</p>
+            </div>
+            <!-- NOTES -->
+            <div class="input-group">
+              <label for="notes">Notes</label>
+              <textarea name="notes" id="notes" cols="30" rows="5"></textarea>
+              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>Error Message</p>
+            </div>
+            <div class="btns">
+              <button id="btn" class="btn" type="button" onclick="Call()">
+                Click
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="right">
+        <table border="1">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Address</th>
+              <th>Date of Birth</th>
+              <th>Dropdown</th>
+              <th id="deleteicon">
+                <span class="material-symbols-outlined" onclick="Delete()">
+                  delete
+                </span>
+                <span
+                  class="material-symbols-outlined"
+                  style="color: rgb(104, 104, 3)"
+                  onclick="Notewindow()"
+                >
+                  description
+                </span>
+                <span
+                  class="material-symbols-outlined"
+                  onclick="DeleteAlllcstrg()"
+                  style="color: rgb(114, 114, 114)"
+                >
+                  <span class="tooltiptext">delete</span>
+                </span>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="show"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- POPUP Window -->
+    <div class="popup" id="n0te">
+      <p style="padding-bottom: 20px; font-size: 2rem">Note</p>
+      <div class="noteContent" id="noteContent"></div>
+      <button id="ok" type="button" onclick="disNotewindow()">ok</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

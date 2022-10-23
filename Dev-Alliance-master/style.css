@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Abyssinica+SIL&display=swap");
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* CSS RESET CODE */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Abyssinica SIL", serif;
+  background-color: #000000;
+  color: white;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+textarea {
+  max-width: 100%;
+  color: white;
+  border-radius: 5px;
+  outline: 1px solid #3e065f;
+  border: none;
+  resize: none;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* Left Side Properties*/
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  width: 40%;
+  border: 1px solid transparent;
+}
+.registration {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 35px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.title p {
+  text-align: center;
+  font-size: 2em;
+  margin: 15px 0 30px;
+}
+.title p:hover {
+  color: rgb(0, 255, 0);
+}
+form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.input-group {
+  margin: 2;
+  max-height: 140px;
+  width: 70%;
+  padding: 0 2px;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  width: 100%;
+  height: 1em;
+  border: none;
+  margin: 2px;
+  margin-bottom: 6px;
+  font-size: medium;
+}
+.input-group label:hover {
+  color: rgb(0, 255, 0);
+}
+.input-group input {
+  color: white;
+  border-radius: 5px;
+  margin: 2px;
+  display: block;
+  width: 100%;
+  height: 2em;
+  border: none;
+  font-size: medium;
+}
+.input-group select {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 34px;
+}
+option,
+option:hover,
+option:focus {
+  background-color: black;
+  border: none;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid #3e065f;
+}
+input,
+textarea,
+select {
+  outline: 1px solid #3e065f;
+  background-color: transparent;
+  color: grey;
+}
+::placeholder {
+  color: grey;
+}
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.btn {
+  font-weight: bold;
+  border-radius: 50px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 50%;
+  width: 50%;
+  font-size: 1em;
+  border: none;
+  background-color: #0074ab;
+}
+.btn:hover {
+  background-color: #3e065f;
+  color: rgb(0, 255, 0);
+  cursor: pointer;
+}
+
+/* Right Side Properties */
+.right {
+  height: 100vh;
+  width: 60%;
+  /* background-color: #100720; */
+  background-image: url("6.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border: 1px solid transparent;
+  padding: 20px;
+  position: relative;
+}
+
+table {
+  border: 6px solid #001e2b;
+  border-collapse: collapse;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1em;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+table tr,
+td,
+th {
+  border: 2px solid #001e2b;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+table th:hover {
+  color: rgb(0, 255, 0);
+}
+table td:hover {
+  color: #7ab9e1;
+}
+.material-symbols-outlined {
+  color: rgb(117, 0, 0);
+  background-color: #000000;
+}
+
+/* error success */
+.error input {
+  border: 3px solid red;
+}
+
+.success input {
+  border: 3px solid green;
+}
+
+.input-group i {
+  position: absolute;
+  right: -25px;
+  top: 30px;
+  visibility: hidden;
+}
+
+.error i.fa-circle-exclamation {
+  visibility: visible;
+  color: red;
+}
+
+.success i.fa-circle-check {
+  visibility: visible;
+  color: green;
+}
+
+.input-group p {
+  font-size: 15px;
+  color: red;
+  visibility: hidden;
+}
+
+.error p {
+  visibility: visible;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  .right {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 100%;
+  }
+}
+
+.popup {
+  background-color: black;
+  height: 50vh;
+  width: 60vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  z-index: 1;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 10px;
+  color: rgb(2, 163, 2);
+  border: 1px solid rgb(0, 17, 0);
+  flex-direction: column;
+  visibility: hidden;
+}
+.popup .noteContent {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+}
+#ok {
+  font-weight: bold;
+  margin-top: 10px;
+  width: 20%;
+  height: 10%;
+  border-radius: 10px 10px 50px 50px;
+  font-size: 1em;
+  border: none;
+  background-color: #0074ab;
+}
+.blurstyle {
+  filter: blur(10px);
+}
+.material-symbols-outlined {
+  cursor: pointer;
+}
